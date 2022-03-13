@@ -52,8 +52,8 @@ Example of E formation: </br>
  Settings are set so ultimate attacks go in this order:</br>
  1. Turiel immediately when swapped to E</br>
  2. Gromma 5sec after swap</br>
- 3. Aila after 20sec after swap</br>
- 4. Pwent after 30sec after swap</br>
+ 3. Aila 20sec after swap</br>
+ 4. Pwent 30sec after swap</br>
  To be clear: The timings are NOT first ult+5sec+20sec+30sec.</br>
  Every timer starts when swapped to E formation.</br>
  Max active monsters is set to 2 -> spawn more monsters when only the boss remains.</br>
