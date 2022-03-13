@@ -27,7 +27,7 @@ Recommended to have slowing attacks in Q and also slow/pushback ults in E. </br>
 Widdle adhd shenanigan is also very useful in E. </br>
  </br>
 Check the checkboxes to select which ults to use. </br>
-(optional) Set the delay after first ult. 0 means use immediately after changed to E formation. </br>
+(optional) Set the delay after swap. 0 means use immediately after changed to E formation. </br>
  </br>
 Max active monsters before clicking bushes: </br>
 If you set this to 5, more mobs will be spawned when there is 4 left. </br>
