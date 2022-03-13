@@ -9,7 +9,7 @@ Repeats until the sun explodes, or you press the stop button. </br>
  </br>
 Installation: </br>
 Sorry, this is not as smooth as it could be. Improvement suggestions/solutions are welcome. </br>
-You have to manually add one line to ShaderFunctions\MemoryRead\IC_GameManager_Class.ahk </br>
+You have to manually add one line to SharedFunctions\MemoryRead\IC_GameManager_Class.ahk </br>
 Put it to line 121, below blahblah.ActivePatron.Tier and above "Screen Resolution" </br>
 Paste this there (it is one line, not two. It's just too long to fit here): </br>
  </br>
