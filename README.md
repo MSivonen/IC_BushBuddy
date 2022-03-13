@@ -4,7 +4,7 @@
 What it does? </br>
 Waits until Jim has killed enough mobs in E formation. </br>
 Then spawns more mobs from bushes with Q formation. </br>
-Then swaps to E formation, use ults to stall/pushback the mobs. </br>
+Then swaps to E formation, stops clicking bushes, and uses ults to stall/pushback the mobs. </br>
 Repeats until the sun explodes, or you press the stop button. </br>
  </br>
 Installation: </br>
