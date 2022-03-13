@@ -51,7 +51,7 @@ Example of E formation: </br>
  In E formation Arkhan usurps attack speed boost from Hew Maan to 0.98s/attack and Widdle spreads the attack speed to adjacents, which are Jim and slowing champs.</br>
  Settings are set so ultimate attacks go in this order:</br>
  1. Turiel immediately when swapped to E</br>
- 2. Gromma after 5sec after swap</br>
+ 2. Gromma 5sec after swap</br>
  3. Aila after 20sec after swap</br>
  4. Pwent after 30sec after swap</br>
  To be clear: The timings are NOT first ult+5sec+20sec+30sec.</br>
