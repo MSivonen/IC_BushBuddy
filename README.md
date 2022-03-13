@@ -65,3 +65,4 @@ Example of E formation: </br>
 Autohotkey is required: https://www.autohotkey.com/ </br>
 ICScriptHub is required: https://github.com/mikebaldi/Idle-Champions </br>
 Ask for help in Discord channel #Scripting, I'm there by the name Thatman: https://discord.com/invite/N3U8xtB </br>
+Huge thanks to Mikebaldi for helping me with the memory read!
