@@ -30,7 +30,7 @@ Check the checkboxes to select which ults to use. </br>
 (optional) Set the delay after swap. 0 means use immediately after changed to E formation. </br>
  </br>
 Max active monsters before clicking bushes: </br>
-If you set this to 4, more mobs will be spawned when there is 4 left. </br>
+If you set this to 5, more mobs will be spawned when there is 4 left.</br>
  </br>
 Cooldown: </br>
 Set it to the same amount (or a bit more) as your longest ult cooldown. </br>
@@ -56,7 +56,7 @@ Example of E formation: </br>
  4. Pwent 30sec after swap</br>
  To be clear: The timings are NOT first ult+5sec+20sec+30sec.</br>
  Every timer starts when swapped to E formation.</br>
- Max active monsters is set to 1 -> spawn more monsters when only the boss remains. (in picture it's 2. Set it to 1)</br>
+ Max active monsters is set to 2 -> spawn more monsters when only the boss remains.</br>
  Cooldown is set to 240sec, because my longest cooldown of the champions used is Turiel's 230 seconds.</br>
  </br>
  </br>
