@@ -7,7 +7,7 @@ Then spawns more mobs from bushes with Q formation. </br>
 Then swaps to E formation, stops clicking bushes, and uses ults to stall/pushback the mobs. </br>
 Repeats until the sun explodes, or you press the stop button. </br>
  </br>
- <b>Known bug: If you set the max monsters to 1, it may be stuck to having only the boss on the level and never swapping to Q formation. Don't set it lower than 2.</br></b>
+ <b>Known bug: If you set the max monsters to 1, and the game lags a bit, it may be stuck to having only the boss on the level and never swapping to Q formation. Don't set it lower than 2. I'll fix it someday.</br></b>
  </br>
 Installation: </br>
 Sorry, this is not as smooth as it could be. Improvement suggestions/solutions are welcome. </br>
