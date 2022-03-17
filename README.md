@@ -10,18 +10,12 @@ Repeats until the sun explodes, or you press the stop button. </br>
  <b>Known bug: If you set the max monsters to 1, and the game lags a bit, it may be stuck to having only the boss on the level and never swapping to Q formation. Don't set it lower than 2. I'll fix it someday.</br></b>
  </br>
 Installation: </br>
-Sorry, this is not as smooth as it could be. Improvement suggestions/solutions are welcome. </br>
-You have to manually add one line to SharedFunctions\MemoryRead\IC_GameManager_Class.ahk </br>
-Put it to line 121, below blahblah.ActivePatron.Tier and above "Screen Resolution" </br>
-Paste this there (it is one line, not two. It's just too long to fit here): </br>
- </br>
-this.Game.GameInstance.Controller.Area.activeMonstersListSize := New GameObjectStructure(this.Game.GameInstance.Controller.Area,, [0x1C, 0xC]) ; push - activeMonsters, _size </br>
- </br>
+Merge AddOns folder with ICScriptHub\AddOns folder and enable the addon with aadon manager. </br>
  </br>
 Instructions: </br>
 Go to desired level (boss level with bush) and isolate the boss like you usually do. </br>
  </br>
-Have Havilar in both Q and E formations, familiar on ult. Krull needs to be in both formations.</br>
+Have Havilar in both Q and E formations, familiar on ult. Krull needs to be in both formations or his stacks will disappear.</br>
 Set formation Q to have six familiars in the field. </br>
 Set formation E to include Jimothy and remove all familiars from the field. Without familiars insta-killing the mobs, there's a bigger chance for pilfer stacks to appear on chicken and transfer to boss. At least I think so.</br>
  </br>
@@ -32,7 +26,7 @@ Check the checkboxes to select which ults to use. </br>
 (optional) Set the delay after swap. 0 means use immediately after changed to E formation. </br>
  </br>
 Max active monsters before clicking bushes: </br>
-If you set this to 5, more mobs will be spawned when there is 4 left.</br>
+If you set this to 5, more mobs will be spawned when there is 5 left.</br>
  </br>
 Cooldown: </br>
 Set it to the same amount (or a bit more) as your longest ult cooldown. </br>
@@ -58,7 +52,7 @@ Example of E formation: </br>
  4. Pwent 30sec after swap</br>
  To be clear: The timings are NOT first ult+5sec+20sec+30sec.</br>
  Every timer starts when swapped to E formation.</br>
- Max active monsters is set to 2 -> spawn more monsters when only the boss remains.</br>
+ Max active monsters is set to 2 -> spawn more monsters when only the boss remains (this should work with 1, but there's the bug I told you above).</br>
  Cooldown is set to 240sec, because my longest cooldown of the champions used is Turiel's 230 seconds.</br>
  </br>
  </br>
