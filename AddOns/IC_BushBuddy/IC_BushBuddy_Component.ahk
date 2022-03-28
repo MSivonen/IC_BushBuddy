@@ -3,7 +3,7 @@
 g_TabControlHeight := g_TabControlHeight >= 700 ? g_TabControlHeight : 700
 GUIFunctions.AddTab("BushBuddy")
 
-g_SF := new IC_SharedFunctions_Class
+;g_SF := new IC_SharedFunctions_Class
 
 global g_BushSettings := g_SF.LoadObjectFromJSON( A_LineFile . "\..\BushSettings.json" )
 global bushRunning := false

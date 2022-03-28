@@ -2,7 +2,7 @@ global ultused := {}
 global startTime := 0
 global activeMonstersListSize := 
 
-Initialize()
+BushInitialize()
 {
     g_SF.Hwnd := WinExist("ahk_exe IdleDragons.exe")
     g_SF.Memory.OpenProcessReader()
@@ -11,10 +11,10 @@ return
 
 Bush_Run()
 {
-    Initialize()
+    BushInitialize()
     famFormation := 0
     BushZone := g_SF.Memory.ReadCurrentZone()
-    activeMonstersListSize := g_SF.ReadActiveMonstersCount()
+    activeMonstersListSize := New g_SF.Memory.GameManager.GameObjectStructure(g_SF.Memory.GameManager.Game.GameInstance.Controller.Area,, [0x1C, 0xC]) ; push - activeMonsters, _size
     startTime := A_TickCount - g_BushSettings.bushDelay * 1000
     g_SF.DirectedInput(,, "{e}" )
     loop, 10
@@ -30,7 +30,7 @@ Bush_Run()
         timeScale := g_SF.Memory.ReadTimeScaleMultiplier()
         currentTime := ( A_TickCount - startTime ) / 1000 * timeScale
         cooldown := floor(g_BushSettings.bushDelay - currentTime)
-        GuiControl, ICScriptHub:, BushDelaySaved, % cooldown > 0 ? "Cooldown left: " . cooldown:"Cooldown left: " . "Waiting for monsters to die..."
+        GuiControl, ICScriptHub:, BushDelaySaved, % cooldown > 0 ? "Cooldown left: " . cooldown:"Cooldown left: " . "Ready"
 ;, % BushDelay < 1 ? bushDelay:"Waiting for monsters to die..."
         GuiControl, ICScriptHub:, BushMonsters, Monsters in area: %activeMonsters%
         GuiControl, ICScriptHub:, BushFormation, % famFormation == 1 ? "Formation in use: familiars on field":"Formation in use: no familiars on field"
