@@ -5,19 +5,20 @@ What it does? </br>
 Waits until Jim has killed enough mobs in E formation. </br>
 Then spawns more mobs from bushes with Q formation. </br>
 Then swaps to E formation, stops clicking bushes, and uses ults to stall/pushback the mobs. </br>
+Without familiars insta-killing the chickens and Krull having a chance to attack them, there's a bigger chance for pilfer stacks to appear on chicken, and having less mobs on screen gives a better chance for the stacks to transfer to the boss. At least I think so.</br>
 Repeats until the sun explodes, or you press the stop button. </br>
  </br>
- <b>Known bug: If you set the max monsters to 1, and the game lags a bit, it may be stuck to having only the boss on the level and never swapping to Q formation. Don't set it lower than 2. I'll fix it someday.</br></b>
+ <b>Known bug: If you set the max monsters to 1, and the game lags a bit, it may be stuck to having only the boss on the level and never swapping to Q formation. Don't set it lower than 2. I'll fix it someday. If stuck, you can always manually swap between Q and E formations</br></b>
  </br>
 Installation: </br>
-Merge AddOns folder with ICScriptHub\AddOns folder and enable the addon with aadon manager. </br>
+Merge AddOns folder with ICScriptHub\AddOns folder and enable the addon with addon manager. </br>
  </br>
 Instructions: </br>
-Go to desired level (boss level with bush) and isolate the boss like you usually do. </br>
+Go to desired level (boss level with bush) and isolate the boss like you usually do. (Pushbacks or Vlahnya or something)</br>
  </br>
 Have Havilar in both Q and E formations, familiar on ult. Krull needs to be in both formations or his stacks will disappear.</br>
 Set formation Q to have six familiars in the field. </br>
-Set formation E to include Jimothy and remove all familiars from the field. Without familiars insta-killing the mobs, there's a bigger chance for pilfer stacks to appear on chicken and transfer to boss. At least I think so.</br>
+Set formation E to include Jimothy and remove all familiars from the field.</br>
  </br>
 Recommended to have slowing attacks in Q and also slow/pushback ults in E. </br>
 Widdle adhd shenanigan is also very useful in E. </br>
