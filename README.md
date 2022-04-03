@@ -1,5 +1,9 @@
 # IC_BushBuddy </br>
  Automatic bush clicker and pilfer stacker addon for ICScriptHub </br>
+ 
+<i>This addon is discontinued, since I'm not playing the game anymore. Anyone can freely use any/all parts of the addon, including all the files in this repository. Feel free to share your fixed version, if you make one.</br>
+It's still working now, 3.4.22.</br>
+If/when this stops working, could you please inform me (via discord/git), so I can add that information to this readme. Thank you.</i></br>
  </br>
 What it does? </br>
 Waits until Jim has killed enough mobs in E formation. </br>
