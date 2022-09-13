@@ -3,13 +3,8 @@
 g_TabControlHeight := g_TabControlHeight >= 700 ? g_TabControlHeight : 700
 GUIFunctions.AddTab("BushBuddy")
 
-;g_SF := new IC_SharedFunctions_Class
-
 global g_BushSettings := g_SF.LoadObjectFromJSON( A_LineFile . "\..\BushSettings.json" )
-global bushRunning := false
-global activeMonsters := 0
-global MaxMonsters := 999
-global bushFormationTXT := "unknown"
+global g_BushBuddy := new BushBuddy
 
 ;check if first run
 If !IsObject( g_BushSettings )
@@ -41,7 +36,7 @@ Gui, ICScriptHub:Add, Text, x15 y70 w50, Status:
 Gui, ICScriptHub:Font, w400
 Gui, ICScriptHub:Add, Text, x+10 y70 w300 vBushStatus, Off
 Gui, ICScriptHub:Add, Text, x15 y90 w300 vBushMonsters, Monsters in area: unknown
-Gui, ICScriptHub:Add, Text, x15 y110 w300 vBushFormation, Formation in use: %bushFormationTXT%
+Gui, ICScriptHub:Add, Text, x15 y110 w300 vBushFormation, Formation in use: unknown
 
 Gui, ICScriptHub:Add, Text, x15 y145 w95, Use ultimates:
 loop, 10
@@ -92,14 +87,6 @@ Gui, ICScriptHub:Add, Button, x15 y+15 gBush_Save_Clicked, Save
 Gui, ICScriptHub:Add, Button, x15 y+15 w50 gBush_Run_Clicked, Start
 Gui, ICScriptHub:Add, Button, x15 y+5 w50 gBush_Stop_Clicked, Stop
 
-;Gui, ICScriptHub:Add, Button, x15 y+5 w50 gTest_Clicked, Test
-;Gui, ICScriptHub:Add, Text, x+10 vTestTXT, test
-
-Test_Clicked()
-{
-    useUltimates()
-}
-
 Bush_Save_Clicked()
 {
     global
@@ -116,7 +103,6 @@ Bush_Save_Clicked()
         g_BushSettings.UltDelay[A_Index] := Ult_Delay%A_Index%
         GuiControl, ICScriptHub:, Ult_Delay%A_Index%_Saved, % Ult_Delay%A_Index%
     }
-    g_bush.UpdateSettings(g_BushSettings)
     g_SF.WriteObjectToJSON( A_LineFile . "\..\BushSettings.json" , g_BushSettings )
     GuiControl, ICScriptHub:, BushMaxMonstersSaved, % "Saved: " . g_BushSettings.MaxMonsters
     GuiControl, ICScriptHub:, BushDelaySaved, % "Saved: " . g_BushSettings.bushDelay
@@ -125,15 +111,17 @@ Bush_Save_Clicked()
 
 Bush_Run_Clicked()
 {
-    bushRunning = true
+    global
+    g_BushBuddy.bushRunning := True
     GuiControl, ICScriptHub:, BushStatus, On
-    Bush_Run()
+    g_BushBuddy.Bush_Run()
     return
 }
 
 Bush_Stop_Clicked()
 {
-    global bushRunning = false
+    global
+    g_BushBuddy.bushRunning := False
     GuiControl, ICScriptHub:, BushStatus, Off
     GuiControl, ICScriptHub:, BushMonsters, Monsters in area: unknown
 }
