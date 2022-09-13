@@ -1,6 +1,6 @@
 {
 	"Name":"BushBuddy",
-	"Version": "v1.0.1",
+	"Version": "v1.0.2",
     "Includes" : "IC_BushBuddy_Component.ahk",
     "Author" : "Thatman",
     "Url" : "https://github.com/",
